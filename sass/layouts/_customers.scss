@@ -1,0 +1,44 @@
+/* Section customers */
+.customers {
+    @extend %section;
+}
+
+.customers__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.customers__item {
+    margin-right: 30px;
+    color: #AFB1B8;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.customers__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: currentColor;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    cursor: pointer;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border: 1px solid var(--brand-color);
+        color: var(--brand-color);
+    }
+}
+
+.customers__icon {
+    fill: currentColor;
+}

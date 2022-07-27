@@ -1,0 +1,48 @@
+/* Section Team */
+.team {
+    @extend %section;
+    background-color: #F5F4FA;
+}
+
+.team__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team__card {
+    margin-right: 30px;
+    width: calc((100% - 90px) / 4);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background: #FFFFFF;
+
+    &:nth-child(4n) {
+        margin-right: 0;
+    }
+}
+
+.team__img {
+    padding-bottom: 30px;
+}
+
+.team__name {
+    @include text(500, 16px, 1.19);
+
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    text-align: center;
+}
+
+.team__text {
+    @include text(null, 16px, 1.19);
+
+    margin-top: 0;
+    margin-bottom: 16px;
+
+    color: var(--paragraph-color);
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+

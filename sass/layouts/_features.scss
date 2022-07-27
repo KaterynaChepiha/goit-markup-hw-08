@@ -1,0 +1,46 @@
+/* Section features*/
+.features {
+    @extend %section;
+}
+
+.features__list {
+    display: flex;
+    justify-content: center;
+}
+
+.features__container {
+    margin-right: 30px;
+    width: calc((100% - 90px) / 4);
+    width: 270px;
+
+    &:nth-child(4n) {
+        margin-right: 0;
+    }
+}
+
+.features__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+}
+
+.features__subtitle {
+    @include text (700, 14px, 1.14);
+
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    text-transform: uppercase;
+}
+
+.features__text {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    color: var(--paragraph-color);
+    line-height: 1.71;
+}
