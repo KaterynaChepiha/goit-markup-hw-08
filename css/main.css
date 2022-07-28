@@ -8,7 +8,7 @@
   --secondary-font: Raleway, sans-serif;
 }
 
-.portfolio, .customers, .hero {
+.portfolio, .hero {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -854,16 +854,11 @@ address {
 }
 
 /* Section customers */
-.customers__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media screen and (max-width: 480px) {
+  .customers {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .customers__item {
@@ -872,6 +867,12 @@ address {
 }
 .customers__item:last-child {
   margin-right: 0;
+}
+@media screen and (min-width: 480px) {
+  .customers__item {
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
+  }
 }
 
 .customers__link {

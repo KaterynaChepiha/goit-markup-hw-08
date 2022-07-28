@@ -1,13 +1,16 @@
 /* Section customers */
 .customers {
-    @extend %section;
+    @media screen and (max-width: 480px ) {
+        padding-top: 60px;
+        padding-bottom: 60px;       
+    }
 }
 
-.customers__list {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+// .customers__list {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+// }
 
 .customers__item {
     margin-right: 30px;
@@ -15,6 +18,11 @@
 
     &:last-child {
         margin-right: 0;
+    }
+
+    @media screen and (min-width: 480px) {
+        flex-basis: calc((100% - 60px) / 2);
+        
     }
 }
 
