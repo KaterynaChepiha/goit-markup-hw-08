@@ -1,37 +1,49 @@
-// /* Section Hero */
-// .hero {
-//     @extend %section;
+/* Section Hero */
+.hero {
+    @media screen and (min-width: 480px) {
+        padding-top: 118px;
+        padding-bottom: 118px;}
 
-//     color: var(--background-color);
-//     background-color: #2F303A;
-//     text-align: center;
-//     padding: 200px 0;
+    @media screen and (min-width: 1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;}
 
-//     background-image: linear-gradient(to right,
-//             rgba(47, 48, 58, 0.4),
-//             rgba(47, 48, 58, 0.4)),
-//         url('../images/hero/people.jpg');
-//     max-width: 1600px;
-//     margin-left: auto;
-//     margin-right: auto;
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-// }
 
-// .hero__title {
-//     @include text(900, 44px, 1.36);
+    color: var(--background-color);
+    background-color: #2F303A;
+    text-align: center;
+    padding: 200px 0;
 
-//     padding-bottom: 0;
-//     width: 693px;
-//     margin-left: auto;
-//     margin-right: auto;
-//     margin-top: 0;
-//     margin-bottom: 30px;
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url('../images/hero/people.jpg');
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-//     letter-spacing: 0.06em;
-//     text-transform: uppercase;
-// }
+.hero__title {
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+        @include text(900, 26px, 1.62);
+        width: 360px;
+    }
+
+    @include text(900, 44px, 1.36);
+
+    padding-bottom: 0;
+    width: 693px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
 
 
 
