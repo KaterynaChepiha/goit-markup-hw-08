@@ -1,21 +1,47 @@
 /* Section features*/
 .features {
-    @extend %section;
+    @media screen and (max-width: 1199px) {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
 }
 
 .features__list {
-    display: flex;
-    justify-content: center;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .features__container {
-    margin-right: 30px;
-    width: calc((100% - 90px) / 4);
-    width: 270px;
-
-    &:nth-child(4n) {
-        margin-right: 0;
+    &:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 30px;
+        }
     }
+
+    @media screen and (min-width: 768px) {
+        margin-right: 30px;
+        width: calc((100% - 60px) / 2);
+
+        // &:nth-child(2n) {
+        //     margin-right: 0;
+        // }
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+        margin-right: 30px;
+        width: calc((100% - 90px) / 4);
+
+        &:nth-child(4n) {
+            margin-right: 0;
+        }
+
+    }
+
+
 }
 
 .features__box {
@@ -31,6 +57,10 @@
 .features__subtitle {
     @include text (700, 14px, 1.14);
 
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
+
     margin-top: 0;
     margin-bottom: 10px;
 
@@ -40,7 +70,6 @@
 .features__text {
     margin-top: 0;
     margin-bottom: 0;
-
     color: var(--paragraph-color);
     line-height: 1.71;
 }
