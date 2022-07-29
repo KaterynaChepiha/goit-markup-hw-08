@@ -26,10 +26,16 @@
     }
 }
 
-.nav,
-.header__container {
+.nav {
     display: flex;
     align-items: center;
+}
+
+.header__container {
+    @media screen and (width: 1200px) {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .link,
@@ -190,7 +196,6 @@
     padding-bottom: 16px;
 }
 
-
 .menu-btn {
     display: inline-flex;
     margin: 0;
@@ -255,7 +260,7 @@
         color: var(--brand-color)
     }
 
-    &--studio {
+    &--current {
         color: var(--brand-color);
     }
 }
