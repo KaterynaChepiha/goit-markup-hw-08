@@ -1,17 +1,13 @@
 // /* Section porfolio works */
 .works-list {
-    @media screen and (min-width: 480px) {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-    }
 }
 
 .works__element {
-    @media screen and (min-width: 480px) {
         &:not(:last-child) {
             margin-bottom: 30px;
-        }
     }
 
     @media screen and (min-width: 768px) {
@@ -71,7 +67,13 @@
 
 
 .works__descr {
-    @include text(400, 18px, 1.56);
+    @include text(400, 15px, 1.47);
+    padding: 30px 18px;
+
+    @media screen and (min-width: 480px) {
+        @include text(400, 18px, 1.56);
+        padding: 63px 24px;
+    }
 
     position: absolute;
     z-index: 1;
@@ -80,7 +82,6 @@
     width: 100%;
     height: 100%;
     margin: 0;
-    padding: 63px 24px;
 
     color: #FFFFFF;
     background-color: rgba(33, 150, 243, 0.9);

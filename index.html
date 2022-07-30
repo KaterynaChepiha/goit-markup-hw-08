@@ -68,7 +68,7 @@
           <a class="logo header__logo nav-mobile__logo" href="./index.html"
             ><span class="header__logo--color">Web</span>Studio</a
           >
-          <button class="menu-btn is-open" type="button" aria-expanded="false" data-menu-button>
+          <button class="menu-btn" type="button" aria-expanded="false" data-menu-button>
             <svg
               class="menu-btn__icon"
               width="40"
@@ -80,7 +80,7 @@
             </svg>
           </button>
 
-          <div class="menu-container is-open" data-menu>
+          <div class="menu-container" data-menu>
             <ul class="menu-container__list list">
               <li class="menu-container__item">
                 <a
@@ -92,7 +92,9 @@
               <li class="menu-container__item">
                 <a class="menu-container__link link" href="./portfolio.html">Портфолио</a>
               </li>
-              <li class="menu-container__link"><a class="nav__link link" href="">Контакты</a></li>
+              <li class="menu-container__link">
+                <a class="menu-container__link link" href="">Контакты</a>
+              </li>
             </ul>
 
             <ul class="menu-contacts list">
@@ -268,37 +270,100 @@
           <ul class="list activity__list">
             <li class="activity__item">
               <div class="activity__box">
-                <img
-                  class="activity__img"
-                  src="./images/about/foto-1.jpg"
-                  alt="Человек печатает код на ноутбуке"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/about/img-1__desktop.webp    1x,
+                      ./images/about/img-1__desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/about/img-1__desktop.jpg    1x,
+                      ./images/about/img-1__desktop@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <img
+                    class="activity__img"
+                    src="./images/about/img-1__desktop.jpg"
+                    alt="Человек печатает код на ноутбуке"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
+
                 <p class="activity__descr">Десктопные приложения</p>
               </div>
             </li>
             <li class="activity__item">
               <div class="activity__box">
-                <img
-                  class="activity__img"
-                  src="./images/about/foto-2.jpg"
-                  alt="Человек разрабатывает дизайн для мобильных приложений"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/about/img-2__desktop.webp    1x,
+                      ./images/about/img-2__desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/about/img-2__desktop.jpg    1x,
+                      ./images/about/img-2__desktop@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <img
+                    class="activity__img"
+                    src="./images/about/img-2__desktop.jpg"
+                    alt="Человек разрабатывает дизайн для мобильных приложений"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
+
                 <p class="activity__descr">Мобильные приложения</p>
               </div>
             </li>
             <li class="activity__item">
               <div class="activity__box">
-                <img
-                  class="activity__img"
-                  src="./images/about/foto-3.jpg"
-                  alt="Человек выбирает цвет на палитре"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/about/img-3__desktop.webp    1x,
+                      ./images/about/img-3__desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/about/img-3__desktop.jpg    1x,
+                      ./images/about/img-3__desktop@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <img
+                    class="activity__img"
+                    src="./images/about/img-3__desktop.jpg"
+                    alt="Человек выбирает цвет на палитре"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
+
                 <p class="activity__descr">Дизайнерские решения</p>
               </div>
             </li>
@@ -311,14 +376,75 @@
         <div class="container">
           <h2 class="title">Наша команда</h2>
           <ul class="list team__list">
+            <!-- Игорь Демьяненко -->
             <li class="team__card">
-              <img
-                class="team__img"
-                src="./images/team/igor.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- Desktop -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team-1__desktop.webp    1x,
+                    ./images/team/team-1__desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team-1__desktop.jpg    1x,
+                    ./images/team/team-1__desktop@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- Tablet -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-1__tablet.webp    1x,
+                    ./images/team/team-1__tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-1__tablet.jpg    1x,
+                    ./images/team/team-1__tablet@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Mobile -->
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-1__mobile.webp    1x,
+                    ./images/team/team-1__mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-1__mobile.jpg    1x,
+                    ./images/team/team-1__mobile@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="team__img"
+                  src="./images/team/team-1__mobile.jpg"
+                  alt="Игорь Демьяненко"
+                  width="450"
+                  height="460"
+                />
+              </picture>
+
               <h3 class="team__name">Игорь Демьяненко</h3>
               <p class="team__text" lang="en">Product Designer</p>
               <ul class="list social-list">
@@ -362,14 +488,75 @@
               </ul>
             </li>
 
+            <!-- Ольга Репина -->
             <li class="team__card">
-              <img
-                class="team__img"
-                src="./images/team/olga.jpg"
-                alt="Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- Desktop -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team-2__desktop.webp    1x,
+                    ./images/team/team-2__desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team-2__desktop.jpg    1x,
+                    ./images/team/team-2__desktop@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- Tablet -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-2__tablet.webp    1x,
+                    ./images/team/team-2__tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-2__tablet.jpg    1x,
+                    ./images/team/team-2__tablet@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Mobile -->
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-2__mobile.webp    1x,
+                    ./images/team/team-2__mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-2__mobile.jpg    1x,
+                    ./images/team/team-2__mobile@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="team__img"
+                  src="./images/team/team-2__mobile.jpg"
+                  alt="Ольга Репина"
+                  width="450"
+                  height="460"
+                />
+              </picture>
+
               <h3 class="team__name">Ольга Репина</h3>
               <p class="team__text" lang="en">Frontend Developer</p>
               <ul class="list social-list">
@@ -413,14 +600,75 @@
               </ul>
             </li>
 
+            <!-- Николай Тарасов -->
             <li class="team__card">
-              <img
-                class="team__img"
-                src="./images/team/nikolay.jpg"
-                alt="Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- Desktop -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team-3__desktop.webp    1x,
+                    ./images/team/team-3__desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team-3__desktop.jpg    1x,
+                    ./images/team/team-3__desktop@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- Tablet -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-3__tablet.webp    1x,
+                    ./images/team/team-3__tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-3__tablet.jpg    1x,
+                    ./images/team/team-3__tablet@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Mobile -->
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-3__mobile.webp    1x,
+                    ./images/team/team-3__mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-3__mobile.jpg    1x,
+                    ./images/team/team-3__mobile@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="team__img"
+                  src="./images/team/team-3__mobile.jpg"
+                  alt="Николай Тарасов"
+                  width="450"
+                  height="460"
+                />
+              </picture>
+
               <h3 class="team__name">Николай Тарасов</h3>
               <p class="team__text" lang="en">Marketing</p>
               <ul class="list social-list">
@@ -464,14 +712,75 @@
               </ul>
             </li>
 
+            <!-- Михаил Ермаков -->
             <li class="team__card">
-              <img
-                class="team__img"
-                src="./images/team/mihail.jpg"
-                alt="Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- Desktop -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team-4__desktop.webp    1x,
+                    ./images/team/team-4__desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team-4__desktop.jpg    1x,
+                    ./images/team/team-4__desktop@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- Tablet -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-4__tablet.webp    1x,
+                    ./images/team/team-4__tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-4__tablet.jpg    1x,
+                    ./images/team/team-4__tablet@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Mobile -->
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-4__mobile.webp    1x,
+                    ./images/team/team-4__mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-4__mobile.jpg    1x,
+                    ./images/team/team-4__mobile@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="team__img"
+                  src="./images/team/team-4__mobile.jpg"
+                  alt="Михаил Ермаков"
+                  width="450"
+                  height="460"
+                />
+              </picture>
+
               <h3 class="team__name">Михаил Ермаков</h3>
               <p class="team__text" lang="en">UI Designer</p>
               <ul class="list social-list">

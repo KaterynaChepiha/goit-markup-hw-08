@@ -1,12 +1,23 @@
 // /* PORTFOLIO */
 .portfolio {
-    @media screen and (min-width: 480px) {
-        padding-top: 125px;
+        padding-top: 120px;
         padding-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 140px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 174px;
     }
 }
 
 .portfolio__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+
     @media screen and (min-width: 480px) {
         display: flex;
         flex-wrap: wrap;
@@ -28,13 +39,11 @@
 }
 
 .portfolio__item {
-    @media screen and (min-width: 480px) {
         margin-bottom: 15px;
 
         &:nth-child(4),
         &:nth-child(5) {
         margin-bottom: 0;
-    }
     }
 
     margin-right: 8px;

@@ -72,7 +72,7 @@
           <a class="logo header__logo nav-mobile__logo" href="./index.html"
             ><span class="header__logo--color">Web</span>Studio</a
           >
-          <button class="menu-btn is-open" type="button" aria-expanded="false" data-menu-button>
+          <button class="menu-btn" type="button" aria-expanded="false" data-menu-button>
             <svg
               class="menu-btn__icon"
               width="40"
@@ -84,7 +84,7 @@
             </svg>
           </button>
 
-          <div class="menu-container is-open" data-menu>
+          <div class="menu-container" data-menu>
             <ul class="menu-container__list list">
               <li class="menu-container__item">
                 <a class="menu-container__link link" href="./index.html">Студия</a>
@@ -96,7 +96,9 @@
                   >Портфолио</a
                 >
               </li>
-              <li class="menu-container__link"><a class="nav__link link" href="">Контакты</a></li>
+              <li class="menu-container__link">
+                <a class="menu-container__link link" href="">Контакты</a>
+              </li>
             </ul>
 
             <ul class="menu-contacts list">
@@ -159,13 +161,73 @@
             <li class="works__element">
               <a class="works__link" href="">
                 <div class="works__thumb">
-                  <img
-                    class="works__img"
-                    src="./images/portfolio/work-1.jpg"
-                    alt="Пример работы №1"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/desktop/work-1__desktop.webp    1x,
+                        ./images/portfolio/desktop/work-1__desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/desktop/work-1__desktop.jpg    1x,
+                        ./images/portfolio/desktop/work-1__desktop@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/tablet/work-1__tablet.webp    1x,
+                        ./images/portfolio/tablet/work-1__tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/tablet/work-1__tablet.jpg    1x,
+                        ./images/portfolio/tablet/work-1__tablet@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile -->
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/mobile/work-1__mobile.webp    1x,
+                        ./images/portfolio/mobile/work-1__mobile@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/mobile/work-1__mobile.jpg    1x,
+                        ./images/portfolio/mobile/work-1__mobile@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="works__img"
+                      src="./images/portfolio/mobile/work-1__mobile.jpg "
+                      alt="Пример работы №1"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="works__descr">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
@@ -180,13 +242,73 @@
             <li class="works__element">
               <a class="works__link" href="">
                 <div class="works__thumb">
-                  <img
-                    class="works__img"
-                    src="./images/portfolio/work-2.jpg"
-                    alt="Пример работы №2"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/desktop/work-2__desktop.webp    1x,
+                        ./images/portfolio/desktop/work-2__desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/desktop/work-2__desktop.jpg    1x,
+                        ./images/portfolio/desktop/work-2__desktop@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/tablet/work-2__tablet.webp    1x,
+                        ./images/portfolio/tablet/work-2__tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/tablet/work-2__tablet.jpg    1x,
+                        ./images/portfolio/tablet/work-2__tablet@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile -->
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/mobile/work-2__mobile.webp    1x,
+                        ./images/portfolio/mobile/work-2__mobile@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/mobile/work-2__mobile.jpg    1x,
+                        ./images/portfolio/mobile/work-2__mobile@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="works__img"
+                      src="./images/portfolio/mobile/work-2__mobile.jpg"
+                      alt="Пример работы №2"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="works__descr">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
@@ -202,13 +324,73 @@
             <li class="works__element">
               <a class="works__link" href="">
                 <div class="works__thumb">
-                  <img
-                    class="works__img"
-                    src="./images/portfolio/work-3.jpg"
-                    alt="Пример работы №3"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/desktop/work-3__desktop.webp    1x,
+                        ./images/portfolio/desktop/work-3__desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/desktop/work-3__desktop.jpg    1x,
+                        ./images/portfolio/desktop/work-3__desktop@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/tablet/work-3__tablet.webp    1x,
+                        ./images/portfolio/tablet/work-3__tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/tablet/work-3__tablet.jpg    1x,
+                        ./images/portfolio/tablet/work-3__tablet@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile -->
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/mobile/work-3__mobile.webp    1x,
+                        ./images/portfolio/mobile/work-3__mobile@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/mobile/work-3__mobile.jpg    1x,
+                        ./images/portfolio/mobile/work-3__mobile@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="works__img"
+                      src="./images/portfolio/mobile/work-3__mobile.jpg"
+                      alt="Пример работы №3"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="works__descr">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
@@ -224,13 +406,72 @@
             <li class="works__element">
               <a class="works__link" href="">
                 <div class="works__thumb">
-                  <img
-                    class="works__img"
-                    src="./images/portfolio/work-4.jpg"
-                    alt="Пример работы №4"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/desktop/work-4__desktop.webp    1x,
+                        ./images/portfolio/desktop/work-4__desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/desktop/work-4__desktop.jpg    1x,
+                        ./images/portfolio/desktop/work-4__desktop@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/tablet/work-4__tablet.webp    1x,
+                        ./images/portfolio/tablet/work-4__tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/tablet/work-4__tablet.jpg    1x,
+                        ./images/portfolio/tablet/work-4__tablet@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile -->
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/mobile/work-4__mobile.webp    1x,
+                        ./images/portfolio/mobile/work-4__mobile@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/mobile/work-4__mobile.jpg    1x,
+                        ./images/portfolio/mobile/work-4__mobile@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="works__img"
+                      src="./images/portfolio/mobile/work-4__mobile.jpg"
+                      alt="Пример работы №4"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="works__descr">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
@@ -246,13 +487,72 @@
             <li class="works__element">
               <a class="works__link" href="">
                 <div class="works__thumb">
-                  <img
-                    class="works__img"
-                    src="./images/portfolio/work-5.jpg"
-                    alt="Пример работы №5"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/desktop/work-5__desktop.webp    1x,
+                        ./images/portfolio/desktop/work-5__desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/desktop/work-5__desktop.jpg    1x,
+                        ./images/portfolio/desktop/work-5__desktop@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/tablet/work-5__tablet.webp    1x,
+                        ./images/portfolio/tablet/work-5__tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/tablet/work-5__tablet.jpg    1x,
+                        ./images/portfolio/tablet/work-5__tablet@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile -->
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/mobile/work-5__mobile.webp    1x,
+                        ./images/portfolio/mobile/work-5__mobile@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/mobile/work-5__mobile.jpg    1x,
+                        ./images/portfolio/mobile/work-5__mobile@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="works__img"
+                      src="./images/portfolio/mobile/work-5__mobile.jpg"
+                      alt="Пример работы №5"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="works__descr">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
@@ -268,13 +568,72 @@
             <li class="works__element">
               <a class="works__link" href="">
                 <div class="works__thumb">
-                  <img
-                    class="works__img"
-                    src="./images/portfolio/work-6.jpg"
-                    alt="Пример работы №6"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/desktop/work-6__desktop.webp    1x,
+                        ./images/portfolio/desktop/work-6__desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/desktop/work-6__desktop.jpg    1x,
+                        ./images/portfolio/desktop/work-6__desktop@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/tablet/work-6__tablet.webp    1x,
+                        ./images/portfolio/tablet/work-6__tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/tablet/work-6__tablet.jpg    1x,
+                        ./images/portfolio/tablet/work-6__tablet@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile -->
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/mobile/work-6__mobile.webp    1x,
+                        ./images/portfolio/mobile/work-6__mobile@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/mobile/work-6__mobile.jpg    1x,
+                        ./images/portfolio/mobile/work-6__mobile@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="works__img"
+                      src="./images/portfolio/mobile/work-6__mobile.jpg"
+                      alt="Пример работы №6"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="works__descr">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
@@ -290,13 +649,72 @@
             <li class="works__element">
               <a class="works__link" href="">
                 <div class="works__thumb">
-                  <img
-                    class="works__img"
-                    src="./images/portfolio/work-7.jpg"
-                    alt="Пример работы №7"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/desktop/work-7__desktop.webp    1x,
+                        ./images/portfolio/desktop/work-7__desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/desktop/work-7__desktop.jpg    1x,
+                        ./images/portfolio/desktop/work-7__desktop@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/tablet/work-7__tablet.webp    1x,
+                        ./images/portfolio/tablet/work-7__tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/tablet/work-7__tablet.jpg    1x,
+                        ./images/portfolio/tablet/work-7__tablet@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile -->
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/mobile/work-7__mobile.webp    1x,
+                        ./images/portfolio/mobile/work-7__mobile@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/mobile/work-7__mobile.jpg    1x,
+                        ./images/portfolio/mobile/work-7__mobile@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="works__img"
+                      src="./images/portfolio/mobile/work-7__mobile.jpg"
+                      alt="Пример работы №7"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="works__descr">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
@@ -312,13 +730,72 @@
             <li class="works__element">
               <a class="works__link" href="">
                 <div class="works__thumb">
-                  <img
-                    class="works__img"
-                    src="./images/portfolio/work-8.jpg"
-                    alt="Пример работы №8"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/desktop/work-8__desktop.webp    1x,
+                        ./images/portfolio/desktop/work-8__desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/desktop/work-8__desktop.jpg    1x,
+                        ./images/portfolio/desktop/work-8__desktop@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/tablet/work-8__tablet.webp    1x,
+                        ./images/portfolio/tablet/work-8__tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/tablet/work-8__tablet.jpg    1x,
+                        ./images/portfolio/tablet/work-8__tablet@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile -->
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/mobile/work-8__mobile.webp    1x,
+                        ./images/portfolio/mobile/work-8__mobile@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/mobile/work-8__mobile.jpg    1x,
+                        ./images/portfolio/mobile/work-8__mobile@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="works__img"
+                      src="./images/portfolio/mobile/work-8__mobile.jpg"
+                      alt="Пример работы №8"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="works__descr">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
@@ -334,13 +811,72 @@
             <li class="works__element">
               <a class="works__link" href="">
                 <div class="works__thumb">
-                  <img
-                    class="works__img"
-                    src="./images/portfolio/work-9.jpg"
-                    alt="Пример работы №9"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/desktop/work-9__desktop.webp    1x,
+                        ./images/portfolio/desktop/work-9__desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/desktop/work-9__desktop.jpg    1x,
+                        ./images/portfolio/desktop/work-9__desktop@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/tablet/work-9__tablet.webp    1x,
+                        ./images/portfolio/tablet/work-9__tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/tablet/work-9__tablet.jpg    1x,
+                        ./images/portfolio/tablet/work-9__tablet@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile -->
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/mobile/work-9__mobile.webp    1x,
+                        ./images/portfolio/mobile/work-9__mobile@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/mobile/work-9__mobile.jpg    1x,
+                        ./images/portfolio/mobile/work-9__mobile@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="works__img"
+                      src="./images/portfolio/mobile/work-9__mobile.jpg"
+                      alt="Пример работы №9"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="works__descr">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
