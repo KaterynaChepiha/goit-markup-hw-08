@@ -73,7 +73,6 @@
 
 .hero__title {
     @include text(900, 26px, 1.62);
-        width: 360px;
 
     @media screen and (min-width: 1200px) {
         @include text(900, 44px, 1.36);
