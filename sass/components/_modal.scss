@@ -1,7 +1,10 @@
 .modal {
+    width: 95%;
+
     @media screen and (min-width: 480px) {
         width: 450px;
         height: 600px;
+        padding: 40px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -12,7 +15,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    padding: 40px;
+    padding: 20px;
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
 
@@ -157,8 +160,10 @@
 }
 
 .agreement__icon {
-    margin-right: 9px;
-    width: 16px;
+
+        width: 16px;
+        margin-right: 8px;
+
     height: 15px;
     border: 2px solid #212121;
     border-radius: 2px;
@@ -178,6 +183,8 @@
 }
 
 .agreement__text {
+    @include text(400, 12px, 1.4);
+
     @media screen and (min-width: 480px) {
         @include text(400, 12px, 1.16);
     }
@@ -197,12 +204,13 @@
     color: var(--brand-color);
 
     &--text {
-        margin-left: 2px;
         color: var(--brand-color);
     }
 }
 
 .agreement__link--text {
+    @include text(400, 12px, 1.4);
+
     @media screen and (min-width: 480px) {
         @include text(400, 12px, 1.16);
     }
